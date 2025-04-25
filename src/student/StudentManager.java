@@ -1,10 +1,13 @@
+package student;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-class StudentManager {
+class StudentManager implements IStudent{
     private ArrayList<Student> arrayListStudents = new ArrayList<>();
     private LinkedList<Student> linkedListStudents = new LinkedList<>();
 
+    @Override
     public void addStudent(Student student) {
         arrayListStudents.add(student);
         linkedListStudents.add(student);

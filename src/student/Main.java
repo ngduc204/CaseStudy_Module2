@@ -1,3 +1,5 @@
+package student;
+
 import java.util.Scanner;
 
 public class Main {
@@ -22,7 +24,6 @@ public class Main {
             System.out.println("Nhập lựa chọn của bạn (0 - 5)");
             int choice = sc.nextInt();
             sc.nextLine();
-
             switch (choice) {
                 case 0: // Hiển thị danh sách sinh viên
                     studentManager.displayStudents();
